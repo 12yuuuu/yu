@@ -62,7 +62,7 @@ export function NavBar() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between">
           <Link
-            to="/"
+            to="/yu"
             className="text-[#1E3A8A] dark:text-[#A3BFFA] transition-colors hover:text-blue-600 dark:hover:text-blue-200"
             aria-label="Home"
           >
