@@ -1,4 +1,3 @@
-
 import type { Config } from "tailwindcss";
 
 export default {
@@ -153,6 +152,15 @@ export default {
 					'0%': { transform: 'translateX(-100px)' },
 					'100%': { transform: 'translateX(calc(100vw + 200px))' },
 				},
+				'fade-transition': {
+					'0%': { opacity: '0' },
+					'50%': { opacity: '1' },
+					'100%': { opacity: '0' },
+				},
+				'border-slide': {
+					'0%': { 'clip-path': 'inset(0 0 100% 0)' },
+					'100%': { 'clip-path': 'inset(0 0 0 0)' },
+				},
 			},
 			animation: {
 				'accordion-down': 'accordion-down 0.2s ease-out',
@@ -170,6 +178,8 @@ export default {
 				'ripple-line': 'rippleLine 15s linear infinite',
 				'wave-line': 'waveLine 10s ease-in-out infinite',
 				'drift-cloud': 'driftCloud 45s linear infinite',
+				'fade-transition': 'fade-transition 1s ease-in-out',
+				'border-slide': 'border-slide 0.5s ease-out forwards',
 			},
 			fontFamily: {
 				sans: ['Inter var', 'sans-serif'],
