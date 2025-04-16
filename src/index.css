@@ -129,6 +129,30 @@
   .input-field {
     @apply block w-full px-4 py-3 rounded-lg border border-gray-300 dark:border-gray-700 bg-white/50 dark:bg-gray-900/50 text-gray-900 dark:text-white focus:outline-none focus:ring-2 focus:ring-blue-500 dark:focus:ring-blue-400 focus:border-transparent transition-all duration-200;
   }
+  
+  .section-header {
+    @apply min-h-[15vh] flex flex-col items-center justify-center;
+  }
+
+  /* Added hover interactions for improved UX */
+  .hover-scale {
+    @apply transition-transform duration-300 hover:scale-110;
+  }
+  
+  .hover-lift {
+    @apply transition-all duration-300 hover:translate-y-[-5px] hover:shadow-lg;
+  }
+  
+  .button-hover {
+    @apply relative overflow-hidden transition-all duration-300 hover:shadow-md 
+           before:absolute before:inset-0 before:bg-white/10 before:opacity-0 
+           hover:before:opacity-100 before:transition-opacity;
+  }
+  
+  .link-hover {
+    @apply relative before:absolute before:bottom-0 before:left-0 before:h-[2px] before:w-0 
+           before:bg-current before:transition-all before:duration-300 hover:before:w-full;
+  }
 }
 
 /* Animations */
@@ -148,14 +172,14 @@
   animation-delay: 500ms;
 }
 
-/* Page Transitions */
+/* Page Transitions - Updated for smoother crossfade */
 .page-enter {
   opacity: 0;
-  transform: translateY(20px);
+  transform: scale(0.98);
 }
 .page-enter-active {
   opacity: 1;
-  transform: translateY(0);
+  transform: scale(1);
   transition: opacity 300ms, transform 300ms;
 }
 .page-exit {
@@ -166,7 +190,76 @@
   transition: opacity 300ms;
 }
 
-/* Background Animation Keyframes */
+/* Animation keyframes */
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    transform: translateY(10px) scale(0.98);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
+
+@keyframes slideUp {
+  0% {
+    transform: translateY(20px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@keyframes slideDown {
+  0% {
+    transform: translateY(-20px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@keyframes slideLeft {
+  0% {
+    transform: translateX(20px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes slideRight {
+  0% {
+    transform: translateX(-20px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes fadeInBounce {
+  0% {
+    opacity: 0;
+    transform: translateY(10px) scale(0.98);
+  }
+  70% {
+    transform: translateY(-5px) scale(1.02);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
+
 @keyframes rippleLine {
   0% {
     transform: translateX(-100%) scaleY(1);
@@ -197,7 +290,6 @@
   }
 }
 
-/* Cloud Drifting Animation */
 @keyframes driftCloud {
   0% {
     transform: translateX(-100px);
@@ -205,6 +297,93 @@
   100% {
     transform: translateX(calc(100vw + 200px));
   }
+}
+
+@keyframes headingUnderline {
+  0% {
+    width: 0;
+  }
+  100% {
+    width: 100px;
+  }
+}
+
+@keyframes writing {
+  0% {
+    transform: translateX(-5px);
+  }
+  50% {
+    transform: translateX(5px);
+  }
+  100% {
+    transform: translateX(-5px);
+  }
+}
+
+@keyframes fade-transition {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes border-slide {
+  0% {
+    clip-path: inset(0 0 100% 0);
+  }
+  100% {
+    clip-path: inset(0 0 0 0);
+  }
+}
+
+/* Apply animations */
+.animate-fade-in {
+  animation: fadeIn 0.6s ease-out forwards;
+}
+
+.animate-slide-up {
+  animation: slideUp 0.6s ease-out forwards;
+}
+
+.animate-slide-down {
+  animation: slideDown 0.6s ease-out forwards;
+}
+
+.animate-slide-left {
+  animation: slideLeft 0.6s ease-out forwards;
+}
+
+.animate-slide-right {
+  animation: slideRight 0.6s ease-out forwards;
+}
+
+.animate-heading-underline {
+  animation: headingUnderline 0.8s ease-out forwards;
+}
+
+.animate-writing {
+  animation: writing 2s ease-in-out infinite;
+}
+
+.animate-fade-bounce {
+  animation: fadeInBounce 0.5s cubic-bezier(0.68, -0.55, 0.265, 1.55) forwards;
+}
+
+/* Show elements when they become visible */
+.reveal-on-scroll {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+
+.reveal-on-scroll.visible {
+  opacity: 1;
+  transform: translateY(0);
 }
 
 /* Add font-family utilities */

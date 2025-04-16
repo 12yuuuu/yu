@@ -5,10 +5,13 @@ export function Footer() {
   const currentYear = new Date().getFullYear();
 
   return (
-    <footer className="py-8 border-t border-gray-200 dark:border-gray-800 bg-white/50 dark:bg-gray-900/50 backdrop-blur-sm transition-colors duration-300">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <footer className="relative pt-8 pb-8 bg-transparent">
+      {/* Removed gradient overlay to have fully transparent background */}
+      
+      {/* Footer content with transparent background */}
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         <div className="flex flex-col md:flex-row justify-between items-center">
-          <p className="text-gray-600 dark:text-gray-400 mb-4 md:mb-0">
+          <p className="text-gray-600 dark:text-gray-300 mb-4 md:mb-0">
             © {currentYear} My Portfolio. All rights reserved.
           </p>
           
@@ -17,7 +20,7 @@ export function Footer() {
               href="https://github.com/12yuuuu" 
               target="_blank" 
               rel="noopener noreferrer"
-              className="text-gray-600 dark:text-gray-400 hover:text-blue-600 dark:hover:text-blue-300 transition-colors duration-200 transform hover:scale-110"
+              className="text-gray-600 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-300 transition-colors duration-200 transform hover:scale-110"
               aria-label="GitHub"
             >
               <Github className="h-5 w-5" />
@@ -26,14 +29,14 @@ export function Footer() {
               href="https://www.linkedin.com/in/kuan-yu-liu-b24962301/" 
               target="_blank" 
               rel="noopener noreferrer"
-              className="text-gray-600 dark:text-gray-400 hover:text-blue-600 dark:hover:text-blue-300 transition-colors duration-200 transform hover:scale-110"
+              className="text-gray-600 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-300 transition-colors duration-200 transform hover:scale-110"
               aria-label="LinkedIn"
             >
               <Linkedin className="h-5 w-5" />
             </a>
             <a 
               href="mailto:yu1inge2@gmail.com" 
-              className="text-gray-600 dark:text-gray-400 hover:text-blue-600 dark:hover:text-blue-300 transition-colors duration-200"
+              className="text-gray-600 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-300 transition-colors duration-200"
               aria-label="Email"
             >
               <Mail className="h-5 w-5" />

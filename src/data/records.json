@@ -1,0 +1,33 @@
+
+[
+  {
+    "date": "April 8, 2025",
+    "title": "Machine Learning Research",
+    "description": "Experimented with new algorithms for my stock analysis model. Improved prediction accuracy by 12%."
+  },
+  {
+    "date": "April 7, 2025",
+    "title": "Mobile App Design",
+    "description": "Sketched wireframes for a new mobile application. Focused on creating an intuitive user flow and minimalist UI."
+  },
+  {
+    "date": "April 6, 2025",
+    "title": "Data Visualization",
+    "description": "Worked on new chart designs for my visualization tool. Implemented responsive charts with interactive tooltips."
+  },
+  {
+    "date": "April 5, 2025",
+    "title": "Worked on AI Project",
+    "description": "Spent the day debugging my AI stock analysis model and added new features for predictive analytics."
+  },
+  {
+    "date": "April 4, 2025",
+    "title": "Updated Portfolio Website",
+    "description": "Implemented a new loading animation and added a Daily Records section to my portfolio website."
+  },
+  {
+    "date": "April 3, 2025",
+    "title": "LINE Chatbot Update",
+    "description": "Improved the chatbot's NLP capabilities for better user interaction. Added support for multiple languages."
+  }
+]

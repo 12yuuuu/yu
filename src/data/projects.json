@@ -1,0 +1,48 @@
+
+[
+  {
+    "id": "project-1",
+    "title": "AI Stock Analysis Competition",
+    "description": "A machine learning model for stock market analysis and prediction, developed for a competitive challenge. Incorporates deep learning methods to analyze historical data and forecast market trends.",
+    "image": "https://images.unsplash.com/photo-1611974789855-9c2a0a7236a3?q=80&w=2070&auto=format&fit=crop",
+    "tags": ["Python", "Machine Learning", "Finance", "Data Analysis"],
+    "liveUrl": "https://google.com",
+    "repoUrl": "https://google.com"
+  },
+  {
+    "id": "project-2",
+    "title": "LINE Chatbot Lifestyle Assistant",
+    "description": "An intelligent LINE chatbot that assists users with daily lifestyle management, including weather updates, appointment reminders, and personalized recommendations.",
+    "image": "https://images.unsplash.com/photo-1614064641938-3bbee52942c7?q=80&w=2070&auto=format&fit=crop",
+    "tags": ["Node.js", "LINE API", "NLP", "Cloud Functions"],
+    "liveUrl": "https://google.com",
+    "repoUrl": "https://google.com"
+  },
+  {
+    "id": "project-3",
+    "title": "Online Data Visualization Helper",
+    "description": "A web-based tool that transforms complex datasets into intuitive, interactive visualizations. Designed to help non-technical users understand and communicate data insights effectively.",
+    "image": "https://images.unsplash.com/photo-1551288049-bebda4e38f71?q=80&w=2070&auto=format&fit=crop",
+    "tags": ["React", "D3.js", "Typescript", "Data Viz"],
+    "liveUrl": "https://google.com",
+    "repoUrl": "https://google.com"
+  },
+  {
+    "id": "project-4",
+    "title": "Voice Diary",
+    "description": "A privacy-focused voice journaling application that converts speech to text and organizes entries by date, mood, and custom tags. Includes sentiment analysis and reflective insights.",
+    "image": "https://images.unsplash.com/photo-1557672172-298e090bd0f1?q=80&w=1974&auto=format&fit=crop",
+    "tags": ["React Native", "Speech Recognition", "NLP", "Firebase"],
+    "liveUrl": "https://google.com",
+    "repoUrl": "https://google.com"
+  },
+  {
+    "id": "project-5",
+    "title": "Badminton Visual Analysis",
+    "description": "Computer vision system for badminton players to analyze their technique and performance. Tracks movements, identifies areas for improvement, and provides personalized coaching recommendations.",
+    "image": "https://images.unsplash.com/photo-1613918431747-c97184bc9f4a?q=80&w=2070&auto=format&fit=crop",
+    "tags": ["Python", "OpenCV", "TensorFlow", "Sports Analytics"],
+    "liveUrl": "https://google.com",
+    "repoUrl": "https://google.com"
+  }
+]
