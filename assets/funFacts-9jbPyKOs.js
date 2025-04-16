@@ -1,0 +1,1 @@
+const e=["I once built a snack distribution robot using Arduino!","I've written over 100,000 lines of code in the past year.","My first computer was a Commodore 64 that I modified myself.","I can type 120 words per minute on a good day.","I learned to code by creating a text-based adventure game when I was 12."];export{e as default};
